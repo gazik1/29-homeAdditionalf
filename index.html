@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Задание на XSS атаку</h1>
+
+        <div id="task1">
+            <h1>name</h1>
+        </div>
+
+        <form id="task1_form">
+            <textarea name="input" cols="30" rows="10">
+                 <button onclick="alert('ff')">xss атака</button>
+            </textarea>
+            <button name="button" type="button">добавить</button>
+        </form>
+    </div>
+
+    <hr>
+    <div>
+        <h1>Задание на защиту от XSS</h1>
+
+        <div id="task2">
+            <h1>name</h1>
+        </div>
+
+        <form id="task2_form">
+            <textarea name="input" cols="30" rows="10">
+                <button onclick="alert('ff')">xss атака</button>    
+            </textarea>
+            <button name="button" type="button">добавить</button>
+        </form>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
